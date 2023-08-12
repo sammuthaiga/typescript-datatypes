@@ -33,6 +33,7 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(add2(2,3, ...numbers))
 
 // generic functions
+// NB: <T> acts as a placeholder.
 
 function getItems<T>(items: T[]): T[] {
     return new Array<T>().concat(items)
