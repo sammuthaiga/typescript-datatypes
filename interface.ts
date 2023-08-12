@@ -12,7 +12,11 @@ let user: user = {
     id: 234567,
     email: 'john@example.com'
 
+    
 }
+// Accessing specific objects use the dot notation
+user.name;
+user.email;
 
 console.log(user);
 
