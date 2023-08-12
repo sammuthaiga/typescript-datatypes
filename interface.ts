@@ -40,7 +40,7 @@ console.log(emp1)
 
 // Array destructuring
 // Access user1 and user2 only through array destructuring
-let [user1, user2]: user[] = [{
+let [user1, user2, ...restusers]: user[] = [{
     name: 'Dave',
     age: 36,
     id: 1,
@@ -59,5 +59,10 @@ let [user1, user2]: user[] = [{
     email: 'sam@example.com',
 },
 ]
-console.log(user1)
-console.log(user2)
+// console.log(user1)
+// console.log(user2)
+// console.log(restusers)
+
+// Using the filter function
+let results = restusers.filter(user => user.id >2)
+console.log(results)
