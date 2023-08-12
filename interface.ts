@@ -14,6 +14,7 @@ let { name: username, email }: user = {
 
     
 }
+console.log(username, email)
 // Accessing specific objects use the dot notation
 // user.name;
 // user.email;
@@ -36,3 +37,27 @@ let emp1: Employee = {
 }
 
 console.log(emp1)
+
+// Array destructuring
+// Access user1 and user2 only through array destructuring
+let [user1, user2]: user[] = [{
+    name: 'Dave',
+    age: 36,
+    id: 1,
+    email: 'sam@example.com',
+},
+{
+    name: 'Jose',
+    age: 36,
+    id: 2,
+    email: 'sam@example.com',
+},
+{
+    name: 'Lucy',
+    age: 36,
+    id: 3,
+    email: 'sam@example.com',
+},
+]
+console.log(user1)
+console.log(user2)
