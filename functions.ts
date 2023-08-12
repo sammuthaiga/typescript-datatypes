@@ -1,9 +1,12 @@
 // name function
 
-function add(num1: number, num2: number): number {
-    return num1 + num2;
+function add(num1: number, num2: number, num3?: number): number {
+    return num3 ? num1 + num2 + num3 : num1 + num2;
 }
 console.log(add(20,30));
+
+console.log(add(20,30,40));
+
 
 // arrow function
 
