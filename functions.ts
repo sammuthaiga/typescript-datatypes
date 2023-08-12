@@ -31,3 +31,14 @@ function add2(num1: number, num2: number, ...num3: number[]): number {
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(add2(2,3, ...numbers))
+
+// generic functions
+
+function getItems<T>(items: T[]): T[] {
+    return new Array<T>().concat(items)
+}
+
+let concatResults = getItems<number>([2,3,4,5,6,7])
+let concatStrings = getItems<string>(['a', 'b', 'c', 'd', 'e',])
+console.log(concatResults)
+console.log(concatStrings)
