@@ -1,3 +1,5 @@
+
+
 class employee {
     id!: number;
     name!: string;
@@ -20,9 +22,15 @@ class Customer {
         this.id = id;
         this.name = name;
         this.address = address;
+        }
+        getNameWithAddress() : string {
+            return `${this.name} stays at ${this.address}`;
     }
 }
 
+
 let Sam = new Customer(1, "Sam", "333 Nairobi");
+let address = Sam.getNameWithAddress();
 
 console.log(Sam);
+console.log(address);
