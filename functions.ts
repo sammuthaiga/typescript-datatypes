@@ -10,9 +10,10 @@ console.log(add(20,30,40));
 
 // arrow function
 
-const sub = (num1: number, num2: number): number => num1 - num2;
+const sub = (num1: number, num2: number, num3 = 10): number => num1 - num2-num3;
 
 console.log(sub(15,7));
+console.log(sub(15,7,5));
 
 // function expression
 
