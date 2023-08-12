@@ -7,7 +7,7 @@ interface user {
     email: string;
 }
 
-let user: user = {
+let { name: username, email }: user = {
     name: 'John',
     id: 234567,
     email: 'john@example.com'
@@ -15,10 +15,10 @@ let user: user = {
     
 }
 // Accessing specific objects use the dot notation
-user.name;
-user.email;
+// user.name;
+// user.email;
 
-console.log(user);
+// console.log(user);
 
 // Extending an interface and adding some extra properties
 
